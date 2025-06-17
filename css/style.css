@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero form {
+  margin-top: 1rem;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.concepts {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.concepts ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.concepts li {
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.concepts li:hover {
+  transform: translateX(10px);
+}
+
+.author, .summary, .reviews {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.author img {
+  float: left;
+  max-width: 200px;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+/* New sections */
+.hero-text h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.what-you-learn { background: #fff; padding: 2rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.feature { background: #f0f0f0; padding: 1rem; border-radius: 8px; transition: transform 0.3s ease; }
+.feature:hover { transform: translateY(-5px); }
+.why-it-matters, .extras { padding: 2rem; background: #f9f9f9; }
+.extras ul { list-style: disc inside; }
+.testimonials { padding: 2rem; background: #fff; }
+.testimonials blockquote { margin: 1rem 0; border-left: 4px solid #333; padding-left: 1rem; font-style: italic; }
+.testimonials cite { display: block; margin-top: 0.5rem; font-weight: bold; }
+.explore-more { text-align: center; padding: 2rem; background: #f0f0f0; }
+.explore-more a { color: #333; text-decoration: underline; }
+
